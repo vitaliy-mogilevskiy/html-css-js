@@ -3,11 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Document</title>
 </head>
 
 <body>
@@ -16,11 +14,39 @@
       <h1 class="welcomeText">Welcome</h1>
       <h6>log in</h6>
     </div>
+      <div id="login-block">
+        <div class="social">
+          <label>Login with social network</label>
+            <div class="social-buttons">
+              <button class="social-twitter">Connect with <b>Twitter</b></button>
+              <button class="social-facebook">Login with <b>Facebook</b></button>
+            </div>
+        </div>
+      <form class="login-form">
+        <label>Login with registered details</label>
+        <ul>
+          <li class="input-li">
+            <input type="text" placeholder="Username" id="username">
+            <img src="img/username.png" alt="user">
+          </li>
+          <li class="input-li">
+            <input type="password" placeholder="Password" id="password">
+            <img src="img/password.png" alt="pass">
+          </li>
+          <li class="login-li">
+              <label class="checkbox">
+                <input type="checkbox" name=""><i></i>Keep me signed in
+              </label>
+              <button class="login-btn" onclick="return validateForm()">Log in</button></li>
+          <li class="login-li">
+              <a>Forgotten your password</a>
+              <label for="">Don't have an account? <a href="">Register now</a></label>
+          </li>
+        </ul>
+      </form>
+    </div>
   </div>
-
-
-
-<script src="js/plugin.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
